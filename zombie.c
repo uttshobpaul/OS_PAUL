@@ -7,14 +7,14 @@ int main() {
     int child_pid = fork();
 
     if (child_pid ==0) {
-        // Child process
+         
         printf("Child process (PID: %d) is exiting now.\n", getpid());
-        exit(0); // Child finishes and becomes a zombie
-    } 
+        exit(0);  
+      } 
     else {
-   // Parent process
+  
         printf("Parent process (PID: %d) is sleeping...\n", getpid());
-        sleep(50); // Parent stays alive without child
+        sleep(50);  
     }
 
     return 0;
