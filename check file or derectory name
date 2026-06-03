@@ -1,0 +1,12 @@
+echo "Enter file or directory name:"
+read name
+
+if [ -f "$name" ]
+then
+    echo "$name is a File"
+elif [ -d "$name" ]
+then
+    echo "$name is a Directory"
+else
+    echo "$name does not exist"
+fi

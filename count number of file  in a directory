@@ -1,0 +1,6 @@
+echo "Enter directory path:"
+read dir
+
+count=$(find "$dir" -maxdepth 1 -type f | wc -l)
+
+echo "Number of files = $count"

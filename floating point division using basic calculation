@@ -1,0 +1,9 @@
+echo "Enter first number:"
+read a
+
+echo "Enter second number:"
+read b
+
+result=$(echo "scale=2; $a / $b" | bc)
+
+echo "Division = $result"
